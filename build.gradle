@@ -31,7 +31,8 @@ allprojects {
         postgresJdbcVersion = "42.4.3"
         cordaDbContainerName = "CSDEpostgresql"
         cordaBinDir = "${System.getProperty("user.home")}/.corda/corda5"
-        cordaCliBinDir = "${System.getProperty("user.home")}/.corda/cli"
+        //cordaCliBinDir = "${System.getProperty("user.home")}/.corda/cli"
+        cordaCliBinDir = "C:/Users/Roxana/.corda/cli"
         //cpiUploadTimeout = cpiUploadDefault
     }
 
