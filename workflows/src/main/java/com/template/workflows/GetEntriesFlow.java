@@ -56,7 +56,7 @@ RequestBody for triggering the flow via REST:
     "clientRequestId": "get-1",
     "flowClassName": "com.template.workflows.GetEntriesFlow",
     "requestBody": {
-        "senderName":"Producator1",
+        "senderName":"Producator1"
         }
 }
 */
