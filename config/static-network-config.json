@@ -8,11 +8,11 @@
     "cpi" : "MyCorDapp"
   },
   {
-    "x500Name" : "CN=Charlie, OU=Test Dept, O=R3, L=London, C=GB",
+    "x500Name" : "CN=Producator1, OU=Test Dept, O=Roxana, L=London, C=GB",
     "cpi" : "MyCorDapp"
   },
   {
-    "x500Name" : "CN=Dave, OU=Test Dept, O=R3, L=London, C=GB",
+    "x500Name" : "CN=Distribuitor1, OU=Test Dept, O=Roxana, L=London, C=GB",
     "cpi" : "MyCorDapp"
   },
   {
