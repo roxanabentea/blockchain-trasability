@@ -41,7 +41,7 @@ public class FinalizeEntryFlow implements SubFlow<String> {
     @Suspendable
     public String call() {
 
-        log.info("FinalizeChatFlow.call() called");
+        log.info("FinalizeEntryFlow.call() called");
 
         // Initiates a session with the other Member.
         FlowSession session = flowMessaging.initiateFlow(receiver);

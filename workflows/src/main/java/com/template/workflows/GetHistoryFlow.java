@@ -56,7 +56,7 @@ RequestBody for triggering the flow via REST:
     "clientRequestId": "history-1",
     "flowClassName": "com.template.workflows.GetHistoryFlow",
     "requestBody": {
-        "productId":"abc123",
+        "productId":"decasept"
         }
 }
 */

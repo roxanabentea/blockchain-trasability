@@ -11,16 +11,16 @@ public class EntryStateResults {
 
     private UUID id;
     private String productId;
-    private String receiverName;
-    private String date;
+    private String senderName;
+    private String receiver;
 
     public EntryStateResults() {}
 
-    public EntryStateResults(UUID id, String productId, String receiverName, String date) {
+    public EntryStateResults(UUID id, String productId, String senderName, String receiver) {
         this.id = id;
         this.productId = productId;
-        this.receiverName = receiverName;
-        this.date = date;
+        this.senderName = senderName;
+        this.receiver = receiver;
     }
 
     public UUID getId() {
@@ -31,11 +31,11 @@ public class EntryStateResults {
         return productId;
     }
 
-    public String getReceiverName() {
-        return receiverName;
+    public String getSenderName() {
+        return senderName;
     }
 
-    public String getDate() {
-        return date;
+    public String getReceiver() {
+        return receiver;
     }
 }

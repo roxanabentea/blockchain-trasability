@@ -1,18 +1,10 @@
 [
   {
-    "x500Name" : "CN=Alice, OU=Test Dept, O=R3, L=London, C=GB",
+    "x500Name" : "CN=Producator1, OU=Test Dept, O=Roxana, L=Bucuresti, C=RO",
     "cpi" : "MyCorDapp"
   },
   {
-    "x500Name" : "CN=Bob, OU=Test Dept, O=R3, L=London, C=GB",
-    "cpi" : "MyCorDapp"
-  },
-  {
-    "x500Name" : "CN=Producator1, OU=Test Dept, O=Roxana, L=London, C=GB",
-    "cpi" : "MyCorDapp"
-  },
-  {
-    "x500Name" : "CN=Distribuitor1, OU=Test Dept, O=Roxana, L=London, C=GB",
+    "x500Name" : "CN=Distribuitor1, OU=Test Dept, O=Roxana, L=Bucuresti, C=RO",
     "cpi" : "MyCorDapp"
   },
   {

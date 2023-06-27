@@ -95,7 +95,7 @@ public class CreateNewEntryFlow implements ClientStartableFlow {
             // Call FinalizeChatSubFlow which will finalise the transaction.
             // If successful the flow will return a String of the created transaction id,
             // if not successful it will return an error message.
-            return flowEngine.subFlow(new FinalizeChatSubFlow(signedTransaction, otherMember.getName()));
+            return flowEngine.subFlow(new FinalizeEntryFlow(signedTransaction, otherMember.getName()));
         }
         // Catch any exceptions, log them and rethrow the exception.
         catch (Exception e) {
@@ -111,9 +111,9 @@ RequestBody for triggering the flow via REST:
     "clientRequestId": "create-1",
     "flowClassName": "com.template.workflows.CreateNewEntryFlow",
     "requestBody": {
-        "productId":"abc123",
-        "receiver":"CN=Distribuitor1, OU=Test Dept, O=R3, L=London, C=GB",
-        "date": "12.04.2022"
+        "productId":"decasept",
+        "receiver":"CN=Distribuitor1, OU=Test Dept, O=Roxana, L=Bucuresti, C=RO",
+        "date": "12/06/2023"
         }
 }
  */
