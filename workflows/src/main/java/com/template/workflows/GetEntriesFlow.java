@@ -41,7 +41,7 @@ public class GetEntriesFlow implements ClientStartableFlow {
                         stateAndRef.getState().getContractState().getId(),
                         stateAndRef.getState().getContractState().getProductId(),
                         stateAndRef.getState().getContractState().getSender().getCommonName(),
-                        stateAndRef.getState().getContractState().getReceiver()
+                        stateAndRef.getState().getContractState().getDate()
                 )
         ).collect(Collectors.toList());
 

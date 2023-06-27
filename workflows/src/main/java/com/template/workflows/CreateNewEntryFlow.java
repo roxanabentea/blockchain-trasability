@@ -73,6 +73,7 @@ public class CreateNewEntryFlow implements ClientStartableFlow {
                     flowArgs.getProductId(),
                     myInfo.getName(),
                     flowArgs.getReceiver(),
+                    flowArgs.getDate(),
                     Arrays.asList(myInfo.getLedgerKeys().get(0), otherMember.getLedgerKeys().get(0))
             );
 

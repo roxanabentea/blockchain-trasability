@@ -34,10 +34,10 @@ public class GetHistoryFlow implements ClientStartableFlow {
 
         // Queries the VNode's vault for unconsumed states and converts the result to a serializable DTO.
         List<StateAndRef<EntryState>> states = utxoLedgerService.findUnconsumedStatesByType(EntryState.class);
-        List<EntryStateResults> results = states.stream()
+        List<EntryStateHistoryResults> results = states.stream()
                 .filter(state -> state.getState().getContractState().getProductId().equals(flowArgs.getProductId()))
                 .map( stateAndRef ->
-                        new EntryStateResults(
+                        new EntryStateHistoryResults(
                                 stateAndRef.getState().getContractState().getId(),
                                 stateAndRef.getState().getContractState().getProductId(),
                                 stateAndRef.getState().getContractState().getSender().getCommonName(),

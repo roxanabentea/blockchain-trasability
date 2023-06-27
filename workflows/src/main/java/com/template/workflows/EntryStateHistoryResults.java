@@ -7,20 +7,20 @@ import java.util.UUID;
 // that the underlying Jackson serializer recognises, hence creating a DTO style object which consists only of Strings
 // and a UUID. It is possible to create custom serializers for the JsonMarshallingService, but this beyond the scope
 // of this simple example.
-public class EntryStateResults {
+public class EntryStateHistoryResults {
 
     private UUID id;
     private String productId;
     private String senderName;
-    private String date;
+    private String receiver;
 
-    public EntryStateResults() {}
+    public EntryStateHistoryResults() {}
 
-    public EntryStateResults(UUID id, String productId, String senderName, String date) {
+    public EntryStateHistoryResults(UUID id, String productId, String senderName, String receiver) {
         this.id = id;
         this.productId = productId;
         this.senderName = senderName;
-        this.date = date;
+        this.receiver = receiver;
     }
 
     public UUID getId() {
@@ -35,7 +35,7 @@ public class EntryStateResults {
         return senderName;
     }
 
-    public String getDate() {
-        return date;
+    public String getReceiver() {
+        return receiver;
     }
 }

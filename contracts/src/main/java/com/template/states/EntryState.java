@@ -18,6 +18,7 @@ public class EntryState implements ContractState {
     private String productId;
     private MemberX500Name sender;
     private String receiver;
+    private String date;
     public List<PublicKey> participants;
 
     // Allows serialisation and to use a specified UUID.
@@ -26,11 +27,13 @@ public class EntryState implements ContractState {
                       String productId,
                       MemberX500Name sender,
                       String receiver,
+                      String date,
                       List<PublicKey> participants) {
         this.id = id;
         this.productId = productId;
         this.sender = sender;
         this.receiver = receiver;
+        this.date = date;
         this.participants = participants;
     }
 
@@ -46,12 +49,11 @@ public class EntryState implements ContractState {
     public String getReceiver() {
         return receiver;
     }
+    public String getDate() {
+        return date;
+    }
 
     public List<PublicKey> getParticipants() {
         return participants;
-    }
-
-    public EntryState updateMessage(MemberX500Name name, String message) {
-        return new EntryState(id, productId, name, message, participants);
     }
 }
